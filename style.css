@@ -23,12 +23,30 @@ html, body {
     font-size: 16px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .container {
+        display: flex;
+    }
+
+    .container>div {
+        flex: 1;
+    }
 }
 
 /*********************************************************************
